@@ -15,11 +15,11 @@ namespace MASAJES.Models
     public partial class SESIONES_MASAJES
     {
         public int ID { get; set; }
+        public System.DateTime FECHA { get; set; }
         public string NOMBRE { get; set; }
         public string TELEFONO { get; set; }
-        public System.DateTime FECHA { get; set; }
-        public System.TimeSpan HORA { get; set; }
         public int PRECIO { get; set; }
+        public System.TimeSpan HORA { get; set; }
         public string DESCRIPCION { get; set; }
     }
 }
