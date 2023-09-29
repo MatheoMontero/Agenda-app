@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<MASAJES.Models.SESIONES_MASAJES>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Agenda";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Agenda de clientes</h2>
 
 <p>
-    @Html.ActionLink("Crear Nuevo", "Create")
+    @Html.ActionLink("Crear Nuevo", "Create", new { @class = "boton-accion-crear" })
 </p>
 <table class="table">
     <tr>
@@ -54,9 +54,9 @@
             @Html.DisplayFor(modelItem => item.HORA)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Borrar", "Delete", new { id=item.ID })
+            @Html.ActionLink("Editar", "Edit", new { id = item.ID }, new { @class = "boton-accion-editar" }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.ID }, new { @class = "boton-accion-detalles" }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID }, new { @class = "boton-accion-borrar" })
         </td>
     </tr>
 }

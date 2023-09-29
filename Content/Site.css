@@ -18,3 +18,76 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.boton-accion-editar {
+    display: inline-block;
+    padding: 3px 20px;
+    background-color: lightskyblue; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none;
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    font-size: 16px; /* Cambia el tamaño de la fuente según tus preferencias */
+    border: none;
+}
+
+.boton-accion-editar:hover {
+    background-color: deepskyblue; /* Cambia el color de fondo según tus preferencias */
+}
+
+.boton-accion-detalles {
+    display: inline-block;
+    padding: 3px 20px;
+    background-color: lightskyblue; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none;
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    font-size: 16px; /* Cambia el tamaño de la fuente según tus preferencias */
+    border: none;
+}
+
+.boton-accion-detalles:hover {
+    background-color: deepskyblue; /* Cambia el color de fondo según tus preferencias */
+}
+
+.boton-accion-borrar {
+    display: inline-block;
+    padding: 3px 20px;
+    background-color: indianred; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none;
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    font-size: 16px; /* Cambia el tamaño de la fuente según tus preferencias */
+    border: none;
+}
+
+.boton-accion-borrar:hover {
+    background-color: darkred; /* Cambia el color de fondo según tus preferencias */
+}
+
+.boton-accion-crear {
+    display: inline-block;
+    padding: 3px 20px;
+    background-color: lightskyblue; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none;
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    font-size: 16px; /* Cambia el tamaño de la fuente según tus preferencias */
+    border: none;
+}
+
+.boton-accion-crear:hover {
+    background-color: deepskyblue; /* Cambia el color de fondo según tus preferencias */
+}
+
+.accion-volver {
+    display: inline-block;
+    padding: 3px 20px;
+    background-color: grey; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    font-size: 16px; /* Cambia el tamaño de la fuente según tus preferencias */
+}
+
+.accion-volver:hover {
+    background-color: darkgrey;
+}
