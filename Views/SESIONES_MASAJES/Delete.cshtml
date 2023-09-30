@@ -10,7 +10,7 @@
 <h3>Estas seguro que quieres eliminar este agendamiento?</h3>
 <div>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal container body-content py-4">
         <dt>
             @Html.DisplayNameFor(model => model.NOMBRE)
         </dt>
@@ -66,7 +66,7 @@
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-outline-danger" /> |
-            @Html.ActionLink("Volver", "Index", new { @class = "accion-volver" })
+            @Html.ActionLink("Volver", "Index", new { id = Model.ID }, new { @class = "accion-volver" })
         </div>
     }
 </div>

@@ -12,7 +12,7 @@
 {
     @Html.AntiForgeryToken()
     
-<div class="form-horizontal">
+<div class="form-horizontal container body-content py-4">
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <div class="form-group">
@@ -34,7 +34,14 @@
     <div class="form-group">
         @Html.LabelFor(model => model.FECHA, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.FECHA, new { htmlAttributes = new { @class = "form-control" } })
+            @if (Model != null)
+            {
+                <input type="date" id="FECHA" name="FECHA" class="form-control" value="@Model.FECHA?.ToString(" yyyy-MM-dd")" />
+            }
+            else
+            {
+                <input type="date" id="FECHA" name="FECHA" class="form-control" value="" />
+            }
             @Html.ValidationMessageFor(model => model.FECHA, "", new { @class = "text-danger" })
         </div>
     </div>

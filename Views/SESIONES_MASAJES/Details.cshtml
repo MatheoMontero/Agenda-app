@@ -9,7 +9,7 @@
 
 <div>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal container body-content py-4">
         <dt>
             @Html.DisplayNameFor(model => model.NOMBRE)
         </dt>
@@ -61,6 +61,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Volver", "Index", new { @class = "accion-volver" })
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }, new { @class = "boton-accion-editar" }) |
+    @Html.ActionLink("Volver", "Index", new { id = Model.ID }, new { @class = "accion-volver" })
 </p>

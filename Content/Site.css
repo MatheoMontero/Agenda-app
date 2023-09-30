@@ -1,8 +1,15 @@
-﻿/* Set padding to keep content from hitting the edges */
+﻿body {
+    background: #4B79A1; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Set padding to keep content from hitting the edges */
 .body-content {
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #ffffff
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,7 +29,7 @@ textarea {
 .boton-accion-editar {
     display: inline-block;
     padding: 3px 20px;
-    background-color: lightskyblue; /* Cambia el color de fondo según tus preferencias */
+    background-color: dodgerblue; /* Cambia el color de fondo según tus preferencias */
     color: #fff; /* Cambia el color del texto según tus preferencias */
     text-decoration: none;
     border-radius: 5px; /* Redondea las esquinas del botón */
@@ -31,13 +38,18 @@ textarea {
 }
 
 .boton-accion-editar:hover {
-    background-color: deepskyblue; /* Cambia el color de fondo según tus preferencias */
+        background-color: royalblue; /* Cambia el color de fondo según tus preferencias */
+        outline: 2px solid #ff9900;
+}
+
+.boton-accion-editar:focus {
+        outline: 2px solid #ff9900;
 }
 
 .boton-accion-detalles {
     display: inline-block;
     padding: 3px 20px;
-    background-color: lightskyblue; /* Cambia el color de fondo según tus preferencias */
+    background-color: dodgerblue; /* Cambia el color de fondo según tus preferencias */
     color: #fff; /* Cambia el color del texto según tus preferencias */
     text-decoration: none;
     border-radius: 5px; /* Redondea las esquinas del botón */
@@ -46,7 +58,12 @@ textarea {
 }
 
 .boton-accion-detalles:hover {
-    background-color: deepskyblue; /* Cambia el color de fondo según tus preferencias */
+        background-color: royalblue; /* Cambia el color de fondo según tus preferencias */
+        outline: 2px solid #ff9900;
+}
+
+.boton-accion-detalles:focus {
+    outline: 2px solid #ff9900;
 }
 
 .boton-accion-borrar {
@@ -61,13 +78,19 @@ textarea {
 }
 
 .boton-accion-borrar:hover {
-    background-color: darkred; /* Cambia el color de fondo según tus preferencias */
+        background-color: orangered; /* Cambia el color de fondo según tus preferencias */
+        outline: 2px solid #ff9900;
 }
+
+.boton-accion-borrar:focus {
+    outline: 2px solid #ff9900;
+}
+
 
 .boton-accion-crear {
     display: inline-block;
     padding: 3px 20px;
-    background-color: lightskyblue; /* Cambia el color de fondo según tus preferencias */
+    background-color: dodgerblue; /* Cambia el color de fondo según tus preferencias */
     color: #fff; /* Cambia el color del texto según tus preferencias */
     text-decoration: none;
     border-radius: 5px; /* Redondea las esquinas del botón */
@@ -82,12 +105,19 @@ textarea {
 .accion-volver {
     display: inline-block;
     padding: 3px 20px;
-    background-color: grey; /* Cambia el color de fondo según tus preferencias */
-    color: #fff; /* Cambia el color del texto según tus preferencias */
+    background-color: lightgray; /* Cambia el color de fondo según tus preferencias */
+    color: #000000; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none;
     border-radius: 5px; /* Redondea las esquinas del botón */
     font-size: 16px; /* Cambia el tamaño de la fuente según tus preferencias */
+    border: none;
 }
 
 .accion-volver:hover {
-    background-color: darkgrey;
+        background-color: darkgrey;
+        outline: 2px solid #ff9900;
+}
+
+.boton-accion-volver:focus {
+    outline: 2px solid #ff9900;
 }
