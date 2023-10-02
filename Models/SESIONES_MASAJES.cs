@@ -18,7 +18,7 @@ namespace MASAJES.Models
         public System.DateTime FECHA { get; set; }
         public string NOMBRE { get; set; }
         public string TELEFONO { get; set; }
-        public int PRECIO { get; set; }
+        public int? PRECIO { get; set; }
         public System.TimeSpan HORA { get; set; }
         public string DESCRIPCION { get; set; }
     }

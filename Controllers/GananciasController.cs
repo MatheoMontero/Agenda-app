@@ -12,9 +12,12 @@ public class GananciasController : Controller
     public async Task<ActionResult> MostrarGananciasMensuales()
     {
         DateTime fechaActual = DateTime.Now;
+
         decimal gananciasMensuales = await dbContext.SESIONES_MASAJES
             .Where(s => s.FECHA.Month == fechaActual.Month && s.FECHA.Year == fechaActual.Year)
-            .SumAsync(s => s.PRECIO);
+            .Select(s => s.PRECIO ?? 0)
+            .DefaultIfEmpty()
+            .SumAsync();
 
         return View(gananciasMensuales);
     }
